@@ -1,0 +1,6 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: kuma-demo-auth
+  namespace: kuma-demo
+plugin: basic-auth

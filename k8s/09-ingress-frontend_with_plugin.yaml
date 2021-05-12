@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: marketplace
+  namespace: kuma-demo
+  annotations:
+    konghq.com/plugins: kuma-demo-auth
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            backend:
+              serviceName: frontend
+              servicePort: 8080

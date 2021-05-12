@@ -1,0 +1,8 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: yoda
+  namespace: kuma-demo
+username: yoda
+credentials:
+  - yoda-basicauth
